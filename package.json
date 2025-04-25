@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://arrkpong.github.io/my-portfolio",
+  "homepage": "https://arrkpong.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
