@@ -1,37 +1,44 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Mail, Github, Linkedin } from 'lucide-react';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-800 flex flex-col">
+    <main className="d-flex flex-column min-vh-100 bg-white text-dark">
       {/* Header */}
-      <header className="w-full py-6 px-8 bg-gray-100 flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Your Name</h1>
+      <header className="w-100 py-3 px-3 px-md-4 bg-light d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <h1 className="h4 fw-bold mb-2 mb-md-0">Arrkpong Jaroensiri</h1>
         <nav>
-          <ul className="flex space-x-6">
-            <li><a href="#about" className="hover:text-indigo-600">About</a></li>
-            <li><a href="#projects" className="hover:text-indigo-600">Projects</a></li>
-            <li><a href="#contact" className="hover:text-indigo-600">Contact</a></li>
+          <ul className="nav flex-column flex-md-row">
+            <li className="nav-item"><a href="#about" className="nav-link px-2 text-dark">About</a></li>
+            <li className="nav-item"><a href="#projects" className="nav-link px-2 text-dark">Projects</a></li>
+            <li className="nav-item"><a href="#contact" className="nav-link px-2 text-dark">Contact</a></li>
           </ul>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section className="flex-grow flex flex-col justify-center items-center px-8 text-center">
-        <h2 className="text-4xl md:text-6xl font-extrabold mb-4">Hello, I'm Your Name</h2>
-        <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl">
+      <section className="flex-grow-1 d-flex flex-column justify-content-center align-items-center text-center px-3 py-5">
+        <h2 className="display-5 display-md-3 fw-bold mb-3">Hello, I'm Prem</h2>
+        <p className="lead text-secondary mb-4 w-100 w-md-75">
           I build scalable web applications and craft delightful user experiences.
         </p>
-        <a href="#projects" className="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition">
+        <a href="#projects" className="btn btn-primary btn-lg rounded-pill">
           View Projects
         </a>
       </section>
 
       {/* Footer / Contact */}
-      <footer className="w-full py-6 px-8 bg-gray-100 flex justify-center space-x-6">
-        <a href="mailto:youremail@example.com" className="hover:text-indigo-600"><Mail size={20} /></a>
-        <a href="https://github.com/username" className="hover:text-indigo-600"><GitHub size={20} /></a>
-        <a href="https://linkedin.com/in/username" className="hover:text-indigo-600"><Linkedin size={20} /></a>
+      <footer className="w-100 py-3 px-3 bg-light d-flex justify-content-center gap-4 flex-wrap">
+        <a href="mailto:arrkpong1@gmail.com.com" className="text-dark" aria-label="Email">
+          <Mail size={24} />
+        </a>
+        <a href="https://github.com/arrkpong" className="text-dark" aria-label="GitHub">
+          <Github size={24} />
+        </a>
+        <a href="https://linkedin.com/in/arrkpong" className="text-dark" aria-label="LinkedIn">
+          <Linkedin size={24} />
+        </a>
       </footer>
     </main>
   );
