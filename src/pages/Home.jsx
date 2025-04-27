@@ -1,6 +1,7 @@
 // src/pages/Home.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 // Animation variants
 const heroVariant = {
@@ -34,14 +35,13 @@ export default function Home() {
       >
         I build scalable web applications and craft delightful user experiences.
       </motion.p>
-      <motion.a
-        href="/projects"
+      <motion.div
         className="bg-blue-600 text-white text-lg font-medium py-3 px-6 rounded-full"
         variants={buttonVariant}
         whileHover="hover"
       >
-        View Projects
-      </motion.a>
+        <Link to="/projects">View Projects</Link>
+      </motion.div>
     </motion.section>
   );
 }

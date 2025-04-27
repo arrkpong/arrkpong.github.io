@@ -1,6 +1,7 @@
 // src/pages/About.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import {
   Code,
   Layers,
@@ -146,13 +147,12 @@ export default function About() {
           variants={itemVariants}
           className="flex justify-center"
         >
-          <motion.a
-            href="/contact"
+          <motion.div
             whileHover={{ scale: 1.05 }}
             className="mt-4 inline-block px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300"
           >
-            Contact Me
-          </motion.a>
+            <Link to="/contact">Contact Me</Link>
+          </motion.div>
         </motion.div>
       </motion.div>
     </div>
