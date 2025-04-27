@@ -16,10 +16,11 @@ export default function Nav() {
       initial="hidden"
       animate="visible"
     >
-      <h1 className="text-xl font-bold mb-2 md:mb-0">Arrkpong Jaroensiri</h1>
+      {/* <h1 className="text-xl font-bold mb-2 md:mb-0">Arrkpong Jaroensiri</h1> */}
       <nav>
         <ul className="flex flex-col md:flex-row space-y-1 md:space-y-0 md:space-x-4 text-gray-800">
           {[
+            { name: 'Home', to: '/' },
             { name: 'About', to: '/about' },
             { name: 'Projects', to: '/projects' },
             { name: 'Contact', to: '/contact' }

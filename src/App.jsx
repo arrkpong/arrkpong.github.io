@@ -13,6 +13,7 @@ export default function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen bg-white text-gray-900">
+      {/* <div className="flex flex-col min-h-screen bg-white text-gray-900 bg-[url('/assets/background.jpg')] bg-cover bg-center"> */}
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
